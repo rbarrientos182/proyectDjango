@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <title>Hello World</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
   </head>
   <body>
     <h1 style="color:red">
@@ -13,6 +15,7 @@
         <li>
           {{ pr.name }} |
           {{ pr.description }}
+          <img src="{{ pr.image.url }}" alt="">
         </li>
       {% endfor %}
     </ul>
