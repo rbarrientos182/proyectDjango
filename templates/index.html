@@ -10,10 +10,13 @@
     <h1 style="color:red">
       Hola
     </h1>
+    <a href="{% url 'new_product' %}">New products</a>
     <ul>
       {% for pr in producto %}
         <li>
-          {{ pr.name }} |
+          <a href="{% url 'product_detail' pr.pk %}">
+            {{ pr.name }} |
+          </a>
           {{ pr.description }}
           <img src="{{ pr.image.url }}" alt="">
         </li>
