@@ -1,4 +1,5 @@
 from django.http import HttpResponse, HttpResponseRedirect
+from django.contrib.auth.decorators import login_require
 from django.template import loader
 from django.shortcuts import (
     render,
@@ -34,6 +35,7 @@ def product_detail(request, pk):
 
     return HttpResponse(template.render(context, request))
 
+@login_require
 def new_product(request):
     if request.method=='POST':
         form = ProductForm(request.POST, request.FILES)
