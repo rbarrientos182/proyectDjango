@@ -1,8 +1,4 @@
-sgraqsgramkhwamj** ,)sgra* ,reh,rejctaapsidsD.fgles ,nixiMdeiuqeqRnigoL)(repus nruter
-:_ter
-sgrttawk** ,sgfra*a]   ,tseuqer,fles)(hctapsid fed
-)(deriuqer_nigol)(rotaroced_dohtem@#
-:tcejbopo)(inixinciMderiuqeRnigoL ssalc ssalcfrom django.utils.decorators import method_decorator
+from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_require
 from django.shortcuts import redirect
 
